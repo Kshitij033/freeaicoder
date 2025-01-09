@@ -44,7 +44,8 @@ ${html}
       },
     ]);
 
-    const responseContent = completion.choices[0]?.message?.content || '';
+    let responseContent = (completion.choices[0]?.message?.content || "") as string;
+
     const startIndex = responseContent.indexOf('{');
     const endIndex = responseContent.lastIndexOf('}');
     

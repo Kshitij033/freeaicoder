@@ -166,7 +166,7 @@ export async function POST(request: Request) {
 			);
 		}
 
-		let generatedHtml = chatCompletion.choices[0]?.message?.content || "";
+		let generatedHtml = (chatCompletion.choices[0]?.message?.content || "") as string;
 
 		// Extract HTML content from between backticks if present
 		if (generatedHtml.includes("```html")) {

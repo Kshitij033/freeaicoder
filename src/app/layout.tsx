@@ -11,7 +11,7 @@ import { MAINTENANCE_MODE } from "@/lib/settings";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Groq Appgen",
+	title: "Freeaicoder",
 	description: "Interactive HTML editor with AI generation",
 
 	icons: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "website",
 		url: ROOT_URL,
-		title: "Groq Appgen",
+		title: "Freeaicoder",
 		description: "Interactive HTML editor with AI generation",
 		images: `${ROOT_URL}/og-labs.png`,
 	},

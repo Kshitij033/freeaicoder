@@ -56,7 +56,7 @@ export default function SharedApp({
 					<DialogHeader>
 						<DialogTitle>Warning</DialogTitle>
 						<DialogDescription>
-							This is user generated content. Groq is not responsible for the content.
+							This is user generated content. Groq and Mistral is not responsible for the content.
 						</DialogDescription>
 					</DialogHeader>
 					<DialogFooter>

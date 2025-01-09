@@ -1,4 +1,4 @@
-# Groq App Generator
+# App Generator
 
 An interactive web application that generates and modifies web applications using Groq's LLM API. Built with Next.js and TypeScript.
 
@@ -22,6 +22,7 @@ An interactive web application that generates and modifies web applications usin
 
 Required environment variables:
 - `GROQ_API_KEY`: Your Groq API key
+- `MISTRAL_API_KEY`: Your Groq API key
 
 ## Getting Started
 

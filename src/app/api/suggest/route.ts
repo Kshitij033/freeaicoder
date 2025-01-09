@@ -1,30 +1,23 @@
 import { NextResponse } from 'next/server';
-
-import Groq from 'groq-sdk';
+import { Mistral } from '@mistralai/mistralai';
 import { PRIMARY_MODEL, getFallbackModel } from '@/utils/model-selection';
 
-const client = new Groq({
-  apiKey: process.env.GROQ_API_KEY,
+const client = new Mistral({
+  apiKey: process.env.MISTRAL_API_KEY,
 });
 
 async function generateSuggestionWithFallback(messages: any[]) {
   try {
-    return await client.chat.completions.create({
+    return await client.chat.complete({
       messages,
       model: PRIMARY_MODEL,
-      temperature: 0.7,
-      max_tokens: 200,
-      top_p: 1,
     });
   } catch (error) {
     // If the primary model fails, try with a fallback model
     console.error('Primary model failed, trying fallback model');
-    return await client.chat.completions.create({
+    return await client.chat.complete({
       messages,
       model: getFallbackModel(),
-      temperature: 0.7,
-      max_tokens: 200,
-      top_p: 1,
     });
   }
 }

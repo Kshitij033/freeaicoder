@@ -12,8 +12,8 @@ export default function AppLogo({ className, size = 80 }: { className?: string; 
 	}, []);
 
 	// Avoid hydration mismatch by using a default theme before mounting
-	const logoSrc = !mounted ? "/groqlabs_logo-black.png" : 
-		(resolvedTheme === "dark" ? "/groqlabs_logo-white.png" : "/groqlabs_logo-black.png");
+	const logoSrc = !mounted ? "/ai.png" : 
+		(resolvedTheme === "dark" ? "/ai.png" : "/ai.png");
 
 	return (
 		<div className={cn("flex flex-col items-center gap-2", className)}>

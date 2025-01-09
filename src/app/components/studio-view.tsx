@@ -235,7 +235,7 @@ function HomeContent() {
 									className="underline"
 									href="https://console.groq.com/docs/models"
 								>
-									Build with Groq!
+									Built with Mistral AI and Groq!
 								</a>
 							</span>
 						)}

@@ -6,7 +6,7 @@ interface AppExample {
 export const APP_EXAMPLES: AppExample[] = [
   {
     label: "Calculator",
-    prompt: "Create a calculator app with a clean modern design. Include basic arithmetic operations (add, subtract, multiply, divide) and a clear button. The calculator should support decimal numbers and display the current calculation.",
+    prompt: "Create a calculator app with a clean modern design. Include basic arithmetic operations (add, subtract, multiply, divide) and a clear button. The calculator should support decimal numbers and display the current calculation. Only include inline styles and no custom tailwind styles",
   },
   {
     label: "Todo List",

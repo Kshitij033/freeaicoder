@@ -233,7 +233,7 @@ function HomeContent() {
 									rel="noreferrer"
 									target="_blank"
 									className="underline"
-									href="https://console.groq.com/docs/models"
+									href="https://console.mistral.ai/"
 								>
 									Built with Mistral AI and Groq!
 								</a>

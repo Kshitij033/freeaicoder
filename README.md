@@ -14,6 +14,7 @@ An interactive web application that generates and modifies web applications usin
 
 - Next.js 14 (App Router)
 - TypeScript
+- Mistral SDK
 - Groq SDK
 - React Syntax Highlighter
 - UUID for session management
